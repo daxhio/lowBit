@@ -1,5 +1,5 @@
 //SPDX-License-Identifier: MIT
-pragma solidity ^0.6.12;
+pragma solidity ^0.4.24;
 
 import 'zeppelin-solidity/contracts/token/ERC721/ERC721Token.sol';
 import 'zeppelin-solidity/contracts/ownership/Ownable.sol';
@@ -92,7 +92,7 @@ contract Low is ERC721Token, Ownable {
   }
 
   function withdraw(uint amount) public payable onlyOwner returns(bool) {
-    require(amount <= this.balance);
+    require(amount <= address(this.balance);
     owner.transfer(amount);
     return true;
   }

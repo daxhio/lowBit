@@ -30,9 +30,7 @@ contract Low is ERC721Token, Ownable {
   
   mapping(uint256 => Hero) public tokenProperty;
   
-  constructor(string name, string symbol) public
-    ERC721Token(name, symbol)
-  { }
+  constructor() public ERC721Token("Name", "Symbol") {}
 
   function initImage(string _image) public onlyOwner {
     images.push(_image);

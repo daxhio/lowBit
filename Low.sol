@@ -83,7 +83,7 @@ contract Low is ERC721Token, Ownable {
 
   function rand(uint min, uint max) private returns (uint){
     nonce++;
-    return uint(sha3(nonce))%(min+max)-min;
+    return (uint(sha3(nonce))%(min+max)-min);
   }
 
   function getHerosLength() external view returns (uint) {

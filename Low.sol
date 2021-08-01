@@ -3,6 +3,7 @@ pragma solidity ^0.4.24;
 
 import 'zeppelin-solidity/contracts/token/ERC721/ERC721Token.sol';
 import 'zeppelin-solidity/contracts/ownership/Ownable.sol';
+import 'https://github.com/OpenZeppelin/openzeppelin-contracts/blob/4b33eaefa2bd3fd84068319768a2e1b04e7a4c4e/contracts/token/ERC721/IERC721.sol';
 
 /**
  * @title ERC721TokenMock

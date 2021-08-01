@@ -92,7 +92,7 @@ contract Low is ERC721Token, Ownable {
   }
 
   function withdraw(uint amount) public payable onlyOwner returns(bool) {
-    require(amount <= address(this.balance);
+    require(amount <= address(this).balance);
     owner.transfer(amount);
     return true;
   }
